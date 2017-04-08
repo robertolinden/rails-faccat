@@ -7,6 +7,14 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
+puts "=====> Criando conta de Admin Básico"
+
+Admin.create!(email:'admin@example.com',
+				password: '123123123')
+
+
+puts"=====> Criando páginas de exemplo"
+
 10.times do |index|
 	Page.create!(
 			title: "Titulo #{index}",
